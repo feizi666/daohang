@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>我的导航</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"  integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background-color: #f4f6f8;
+      color: #333;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .category {
+      margin-bottom: 40px;
+    }
+
+    .category h2 {
+      margin-bottom: 15px;
+      border-left: 5px solid #007BFF;
+      padding-left: 10px;
+    }
+
+    .links {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 15px;
+    }
+
+    .link {
+      background-color: white;
+      border-radius: 8px;
+      padding: 15px;
+      text-align: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .link:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    .link a {
+      text-decoration: none;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .link i {
+      font-size: 24px;
+      margin-bottom: 8px;
+      color: #007BFF;
+    }
+
+    .link span {
+      font-size: 16px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>wahaha</h1>
+
+  <div class="category">
+    <h2>💻 工作办公</h2>
+    <div class="links">
+      <div class="link"><a href="https://mail.google.com"  target="_blank"><i class="fas fa-envelope"></i><span>邮箱</span></a></div>
+      <div class="link"><a href="https://drive.google.com"  target="_blank"><i class="fas fa-cloud"></i><span>云盘</span></a></div>
+      <div class="link"><a href="https://github.com"  target="_blank"><i class="fab fa-github"></i><span>GitHub</span></a></div>
+      <div class="link"><a href="https://jira.atlassian.com"  target="_blank"><i class="fas fa-bug"></i><span>JIRA</span></a></div>
+    </div>
+  </div>
+
+  <div class="category">
+    <h2>📚 学习资源</h2>
+    <div class="links">
+      <div class="link"><a href="https://developer.mozilla.org"  target="_blank"><i class="fas fa-book"></i><span>MDN 文档</span></a></div>
+      <div class="link"><a href="https://www.w3schools.com"  target="_blank"><i class="fas fa-laptop-code"></i><span>W3Schools</span></a></div>
+      <div class="link"><a href="https://leetcode.com"  target="_blank"><i class="fas fa-code"></i><span>LeetCode</span></a></div>
+      <div class="link"><a href="https://www.zhihu.com"  target="_blank"><i class="fas fa-lightbulb"></i><span>知乎</span></a></div>
+    </div>
+  </div>
+
+  <div class="category">
+    <h2>🎮 娱乐休闲</h2>
+    <div class="links">
+      <div class="link"><a href="https://www.bilibili.com"  target="_blank"><i class="fab fa-bilibili"></i><span>B站</span></a></div>
+      <div class="link"><a href="https://www.youtube.com"  target="_blank"><i class="fab fa-youtube"></i><span>YouTube</span></a></div>
+      <div class="link"><a href="https://music.163.com"  target="_blank"><i class="fas fa-music"></i><span>网易云音乐</span></a></div>
+      <div class="link"><a href="https://www.douban.com"  target="_blank"><i class="fas fa-star"></i><span>豆瓣</span></a></div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 我的私人导航 | 自用版
+  </footer>
+
+</body>
+</html>
